@@ -1,0 +1,93 @@
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+    margin: 60px 170px;
+}
+.projects-title{
+    position: relative;
+}
+.projects-title h1{
+    padding: 0 30px;
+    font-size: 65px;
+    font-weight: 600;
+}
+.projects-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    height: 55px;
+}
+.projects-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.project nav{
+    position: relative;
+    width: 100%;
+    max-width: max-content;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 40px;
+    user-select: none;
+}
+.project nav .btnStyle{
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffff;
+    text-decoration: none;
+    padding: 25px 40px;
+    z-index: 1;
+    cursor: pointer;
+    background: transparent;
+}
+.active-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    border-radius: 5px;
+    transition: var(--transition);
+    cursor: pointer;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    gap: 1rem;
+}
+
+/* @media (max-width:900px){
+    .project .card-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+} */
+/* @media (max-width:650px){
+    .project .card-container{
+        grid-template-columns: 1fr;
+    }
+    .project nav .btnStyle{
+        font-size: 14px;
+    }
+} */
+@media (max-width: 768px){
+    .project nav  {
+       display: none;
+    }
+    .card-container{
+        grid-template-columns: 1fr;
+    }
+}

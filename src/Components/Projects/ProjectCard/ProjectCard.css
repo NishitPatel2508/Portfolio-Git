@@ -1,0 +1,196 @@
+.card-details-middle{
+    border: none;
+    padding-bottom:1rem;
+    border-bottom: 1px solid #c1a7dfad;
+    height: 160px;
+    overflow-x: hidden;
+    overflow-y: scroll; 
+    scrollbar-width: thin;
+    scrollbar-color: #1a1c1d #e4e4ee;  
+    /* scrollbar-3dlight-color: #0665b3; */
+}
+.card .card-details .card-details-middle .description{
+    font-size: 14px;
+}
+.card{
+    padding: 5px;
+    border-radius: 15px;
+    /* background: #533e5ac0; */
+    background: #32323B;
+    /* background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%); */
+    border: 1px solid #fff;
+    transition: background 200ms;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: zoomIn 400ms;
+}
+/* .card .picture {
+    height: 150px;
+    border: 5px solid whitesmoke;
+} */
+.card .picture img {
+    height: 100%;
+    width: 100%;
+    /* border: 5px solid whitesmoke; */
+    border-radius: 10px;
+} 
+@keyframes zoomIn{
+    0%{
+        scale: 0.7;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+.card span{
+    display: inline-block;
+    transition: transform 200ms;
+}
+
+.card .title{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.card .picture{
+    height: 250px;
+    overflow: hidden;
+}
+.card .card-details{
+    flex: 1;
+    text-align: left;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.card .card-details .card-details-top{
+    border: none;
+}
+.card .card-details .card-details-bottom{
+    padding: 1rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*Stack*/
+
+.stack-container{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.stack-box-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr  1fr;
+    gap: 2rem;
+}
+.stack-icon-container{
+    display: flex;
+    align-items: start;
+}
+.stack-name{
+    display: flex;
+    align-items: start;
+}
+/* .stack-left{
+    border: 1px solid #ffff;
+    padding: 0 0.5rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+.stack-right{
+    flex: 1;
+} */
+/* .card .stack-container .stack-right .stack-box-container
+.stack-box .stack-icon-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ffff;
+    border-radius: 10px;
+    padding: 10px 0px;
+    gap: 5px;
+    font-size: 14px;
+} */
+/* 
+.stack-view-more{
+    border-radius: 10px;
+    background-color: #924ce2ad;
+    background-color: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    border: 1px solid #fff;
+    padding: 0.5rem;
+}
+.card .stack-view-more{
+    width: 100%;
+    padding: 1rem 0.5rem;
+    margin-top: 1rem;
+    position: relative;
+    font-size: 14px;
+    cursor: pointer;
+}
+.card .stack-view-more .more-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.card .stack-view-more .stack-expand-box{
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    padding: 2rem 1rem;
+    background: #924ce2ad;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    border-radius: 15px;
+    border: 1px  solid #fff;
+    transition: all 0.3s cubic-bezier(0.165,0.84,0.44,1);
+    display: none;
+}
+.card .stack-view-more .open-stack-expand-box{
+    display: block;
+}
+.card .stack-view-more .stack-expand-box .title{
+    margin-bottom: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+}
+.card .btn-container{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-container a {
+    padding: 10px 10px;
+    border-radius: 10px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+}
+.btn-share{
+    border: 1px solid transparent !important;
+    transition: ;
+    height: 25px;
+    width: 2.4rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btnShareStyle{
+    font-size: 20px;
+}
+.btnShareStyle:hover{
+    font-size: 22px;
+} */
