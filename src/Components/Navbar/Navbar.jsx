@@ -7,6 +7,14 @@ import menu_open from "../../assets/menu_open.svg";
 import menu_close from "../../assets/menu_close.svg";
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
+  const [fix, setFix] = useState(false);
+  const setFixed = () => {
+    if (window.screenY <= 50) {
+      setFix(true);
+    } else {
+      setFix(false);
+    }
+  };
   const menuRef = useRef();
   const openMenu = () => {
     menuRef.current.style.right = "0";
@@ -14,9 +22,10 @@ const Navbar = () => {
   const closeMenu = () => {
     menuRef.current.style.right = "-350px";
   };
+  window.addEventListener("scroll", setFixed);
   return (
-    <div className="navbar">
-      <img src={logo} alt="" />
+    <div className={fix ? "navbar fixed" : "navbar"}>
+      <img src={logo} alt="" className="logo" />
       <img src={menu_open} onClick={openMenu} alt="" className="nav-mob-open" />
       <ul ref={menuRef} className="nav-menu">
         <img

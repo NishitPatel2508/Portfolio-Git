@@ -101,6 +101,9 @@ const Contact = () => {
         setEmail("");
         setName("");
       }, 2000);
+      setTimeout(() => {
+        setMsg("");
+      }, 5000);
       // toast.success(res.message);
     }
   };
@@ -109,7 +112,7 @@ const Contact = () => {
     <div className="contact" id="contact">
       <div className="contact-title">
         <h1>Get in touch</h1>
-        <img src={theme_pattern} alt="" />
+        {/* <img src={theme_pattern} alt="" /> */}
       </div>
       <div className="contact-section">
         <div className="contact-left">
@@ -183,6 +186,7 @@ const Contact = () => {
             type="text"
             placeholder="Enter Your Name"
             name="name"
+            value={nameValue}
             onChange={handleName}
           />
           <input type="hidden" name="from_name" value={nameValue}></input>
@@ -191,12 +195,14 @@ const Contact = () => {
             type="email"
             placeholder="Enter Your Email"
             name="name"
+            value={email}
             onChange={handleEmail}
           />
           <label htmlFor="Write Your message here">Message</label>
           <textarea
             name="message"
             placeholder="Enter Your message"
+            value={userMsg}
             id=""
             cols="30"
             rows="20"
