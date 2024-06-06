@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio-nishit/static/css/main.66b92c2f.css",
+    "main.js": "/portfolio-nishit/static/js/main.170499cc.js",
+    "static/js/453.ace21015.chunk.js": "/portfolio-nishit/static/js/453.ace21015.chunk.js",
+    "static/media/profile_nishit.jpeg": "/portfolio-nishit/static/media/profile_nishit.4e839ea4fff4dfca9b51.jpeg",
+    "static/media/footer_logo.svg": "/portfolio-nishit/static/media/footer_logo.bfa49269d63bf6da41dabf89b528e658.svg",
+    "static/media/logo.svg": "/portfolio-nishit/static/media/logo.907a76c90f647d9ce94197204642d84c.svg",
+    "index.html": "/portfolio-nishit/index.html",
+    "static/media/menu_close.svg": "/portfolio-nishit/static/media/menu_close.d7bcdac2acc8f22501cacb6bbabbb700.svg",
+    "static/media/nav_underline.svg": "/portfolio-nishit/static/media/nav_underline.c56cde277213bbba5816c05ee4d24f73.svg",
+    "static/media/theme_pattern.svg": "/portfolio-nishit/static/media/theme_pattern.92278b3dbc4b903482e1d44b040aa98f.svg",
+    "static/media/arrow_icon.svg": "/portfolio-nishit/static/media/arrow_icon.866a8d83b9723eed11e169d98d66ebc7.svg",
+    "static/media/menu_open.svg": "/portfolio-nishit/static/media/menu_open.f6a63a18e3c68d807e50b1037f3e3555.svg",
+    "main.66b92c2f.css.map": "/portfolio-nishit/static/css/main.66b92c2f.css.map",
+    "main.170499cc.js.map": "/portfolio-nishit/static/js/main.170499cc.js.map",
+    "453.ace21015.chunk.js.map": "/portfolio-nishit/static/js/453.ace21015.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66b92c2f.css",
+    "static/js/main.170499cc.js"
+  ]
+}
