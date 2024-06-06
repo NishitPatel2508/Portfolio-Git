@@ -31,8 +31,8 @@ const Projects = () => {
     <section id="projects">
       <div className="project" id="project">
         <div className="projects-title">
-          <h1>My Latest Work</h1>
-          <img src={theme_pattern} alt="" />
+          <h1>Projects</h1>
+          {/* <img src={theme_pattern} alt="" /> */}
         </div>
         {/* <div className="projects-container"></div> */}
         <nav>
